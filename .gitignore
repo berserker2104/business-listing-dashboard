@@ -1,0 +1,22 @@
+# Python
+venvpy/
+__pycache__/
+*.pyc
+.env
+
+# Database & scraping artifacts
+*.sql
+*.html
+
+# Node
+node_modules/
+/build
+/dist
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.cursor/
