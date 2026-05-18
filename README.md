@@ -17,21 +17,10 @@ business listings data across Indian cities.
 ---
 
 ## 📁 Project Structure-
-
-business-listings-dashboard/
-├── backend/
-│   ├── main.py          # FastAPI app & routes
-│   ├── database.py      # MySQL connection
-│   ├── models.py        # DB models
-│   ├── scraper.py       # Data generation script
-│   ├── requirements.txt
-│   └── .env.example
-├── frontend/
-│   ├── src/
-│   │   ├── App.js
-│   │   └── components/
-│   └── package.json
-└── README.md
+-backend/  -FAstAPI app, database, scrapper
+-frontend/ -React dashboard
+-README.md
+-Requirement.txt
 
 ---
 
@@ -141,6 +130,5 @@ DB_NAME=business_listings
 
 ## 👤 Author
 
-Shubham Khairnar  
-[GitHub](https://github.com//berserker2104) • 
+Shubham Khairnar   
 [LinkedIn](— https://www.linkedin.com/in/shubham-khairnar-31502a231 )
