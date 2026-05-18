@@ -16,11 +16,21 @@ business listings data across Indian cities.
 
 ---
 
-## 📁 Project Structure-
--backend/  -FAstAPI app, database, scrapper
--frontend/ -React dashboard
--README.md
--Requirement.txt
+## 📁 Project Structure
+
+```
+business-listings-dashboard/
+├── backend/
+│   ├── main.py
+│   ├── database.py
+│   ├── scraper.py
+│   ├── mock_data.py
+│   └── requirements.txt
+├── frontend/
+│   ├── src/
+│   └── package.json
+└── README.md
+```
 
 ---
 
