@@ -1,6 +1,8 @@
 import mysql.connector
 from faker import Faker
 import random
+from dotenv import python-dontenv
+import os
 
 fake = Faker('en_IN')  
 CATEGORIES = [
@@ -74,7 +76,7 @@ def insert_into_db(listings):
         conn = mysql.connector.connect(
             host="localhost",
             user="root",
-            password="sdk21000",  
+            password="DB_PASS",  
             database="business_Dashboard"
         )
         cursor = conn.cursor()
@@ -111,10 +113,10 @@ def insert_into_db(listings):
 def verify_data():
     """Quick check — prints counts after insert"""
     conn = mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="sdk21000", 
-        database="business_Dashboard"
+        host=os.getenv("DB_HOST"),
+        user=os.getenv("DB_USER"),
+        password=os.getenv("DB_PASSWORD"), 
+        database=os.getenv("DB_NAME")
     )
     cursor = conn.cursor()
 
@@ -145,3 +147,4 @@ if __name__ == "__main__":
 
     print("\n Verifying data...")
     verify_data()
+
